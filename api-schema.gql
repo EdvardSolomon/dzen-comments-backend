@@ -1,0 +1,22 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type JWTWithUser {
+  jwt: String!
+}
+
+type Query {
+  test: Boolean!
+}
+
+type Mutation {
+  signUp(input: SignUpInput!): JWTWithUser!
+}
+
+input SignUpInput {
+  username: String!
+  email: String!
+  homepage: String!
+  fingerprint: String!
+}
