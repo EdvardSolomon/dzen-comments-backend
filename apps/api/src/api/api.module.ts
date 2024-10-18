@@ -10,7 +10,6 @@ import { join } from 'path';
 import { AuthModule } from '../auth/auth.module';
 
 import { ApiController } from './api.controller';
-import { ApiService } from './api.service';
 
 @Module({
 	imports: [
@@ -24,6 +23,5 @@ import { ApiService } from './api.service';
 		AuthModule,
 	],
 	controllers: [ApiController],
-	providers: [ApiService],
 })
 export class ApiModule {}
